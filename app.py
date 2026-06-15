@@ -32,7 +32,7 @@ cursor.execute('''
 
 @app.route("/")
 def index():
-    return ""
+    return redirect("/login")
 
 @app.route("/home")
 def home():
