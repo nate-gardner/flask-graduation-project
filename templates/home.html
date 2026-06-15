@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% if login %}
+        <a href="/logout">Logout</a> <br/>
+        Thank you for joining! <br/>
+        Member only stuff <br/>
+    {% else %}
+        <a href="/login">Login</a> 
+        <a href="/register">Register</a> <br/>
+    {% endif %}
+
+    Public stuff
+</body>
+</html>
