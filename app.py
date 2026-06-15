@@ -81,7 +81,7 @@ def register():
         
         connection.commit()
         
-        return redirect("/login")
+        return redirect("/home")
         
     else:
         return render_template("register.html", message="")
